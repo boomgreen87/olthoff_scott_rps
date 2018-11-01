@@ -68,34 +68,11 @@ while player is False:
 
 	# Displays who won and asks the user if they would like to play again or quit then performs accordingly
 	# Computer wins game
-	if playerLives == 0:
-		print("Computer won the game!\n")
-
-		while replay is False:
-			replay = input("Type 'Play Again' to play another game or 'Quit' to exit.\n")
-
-			if replay == "Play Again":
-				print("\n\n")
-
-				#Resets lives for new game and starts a new game
-				playerLives = 3
-				compLives = 3
-
-			elif replay == "Quit":
-				#Quits the app
-				exit()
-
-			# Asks user to re-enter choice if the input is not one of the options
-			else:
-				print("\nNot a valid option. Please re-enter your choice, and check your spelling!\n")
-				replay = False
-
-		# Resets replay value
-		replay = False
-
-	# Player wins game
-	if compLives == 0:
-		print("You won the game!\n")
+	if playerLives == 0 or compLives == 0:
+		if playerLives == 0:
+			print("Computer won the game!\n")
+		else:
+			("You won the game!\n")
 
 		while replay is False:
 			replay = input("Type 'Play Again' to play another game or 'Quit' to exit.\n")
