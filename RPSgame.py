@@ -72,7 +72,7 @@ while player is False:
 		if playerLives == 0:
 			print("Computer won the game!\n")
 		else:
-			("You won the game!\n")
+			print("You won the game!\n")
 
 		while replay is False:
 			replay = input("Type 'Play Again' to play another game or 'Quit' to exit.\n")
